@@ -2,9 +2,6 @@ const Discord = require('discord.js');
 const Canvas = require('canvas');
 const bot = new Discord.Client();
 const { Client, MessageEmbed } = require('discord.js');
-//const ytdl = require('ytdl-core');
-//const queue = new Map();
-//const exp = require('./func/exp.js')
 const fs = require('fs');
 //const db = require("quick.db");
 //const { checkServerIdentity } = require('node:tls');
@@ -57,16 +54,6 @@ const anime = [
   'https://tenor.com/view/anime-couple-kiss-anime-gif-21171309',
   ]
 
- /* bot.commands = new Discord.Collection();
-  const commandFiles = fs
-    .readdirSync("./commands")
-    .filter((file) => file.endsWith(".js"));
-  for (const file of commandFiles) {
-    const command = require(`./commands/${file}`);
-  
-    bot.commands.set(command.name, command);
-  }
-*/
 bot.once("ready", () => {
     console.log(bot.user.username + " готов!!!!!!");
   
